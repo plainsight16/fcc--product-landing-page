@@ -1,0 +1,37 @@
+.products {
+  margin-top: rem(60);
+  display: grid;
+  @include breakpointsUp(tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  gap: rem(20);
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: rem(1) solid #000;
+  border-radius: rem(3);
+  &--header {
+    text-transform: uppercase;
+    background-color: var(--card-header);
+    padding: rem(15) 0;
+    width: 100%;
+  }
+  &--price {
+    margin-top: rem(15);
+  }
+  &--content {
+    margin: rem(15) 0;
+    padding: 0;
+    li {
+      padding: rem(5) 0;
+      margin: 0;
+    }
+  }
+  .btn {
+    margin: rem(15) 0;
+  }
+}

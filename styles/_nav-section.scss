@@ -1,0 +1,34 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: var(--background-color);
+  min-height: rem(75);
+}
+.nav {
+  background-color: var(--background-color);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(20);
+  &--logo {
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: rem(300);
+    }
+  }
+  &--links {
+    flex-basis: rem(668);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a:not(:last-child) {
+      margin-right: rem(20);
+    }
+  }
+}

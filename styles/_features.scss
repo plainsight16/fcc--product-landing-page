@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: rem(30);
+  margin-top: rem(30);
+}
+.content {
+  display: flex;
+  align-items: center;
+  &--1 {
+    position: relative;
+    left: rem(-31);
+  }
+  &--icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: rem(125);
+    color: var(--btn-hover-background);
+    svg {
+      height: rem(48);
+    }
+    &--fire svg {
+      width: rem(36);
+    }
+    &--truck svg,
+    &--battery svg {
+      width: rem(60);
+    }
+  }
+}
